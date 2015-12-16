@@ -1,4 +1,4 @@
-FROM tutum/centos:centos6
+FROM centos:centos6
 #RUN yum update -y
 #ADD script/php.sh /tmp/php.sh
 #RUM bash /tmp/php.sh
