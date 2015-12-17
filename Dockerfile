@@ -1,5 +1,4 @@
 FROM tutum/centos:centos6
-#tag test
 RUN yum update -y
 ADD script/php.sh /tmp/php.sh
 RUM bash /tmp/php.sh
