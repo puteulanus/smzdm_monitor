@@ -1,0 +1,12 @@
+image: tutum/centos:centos6
+
+services:
+
+env:
+
+install:
+
+before_script:
+
+script:
+    - echo 'build successful'
