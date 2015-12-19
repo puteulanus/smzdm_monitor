@@ -6,4 +6,4 @@ ADD web /root/web
 ADD script/run.sh /root/run.sh
 RUN chmod +x /root/run.sh
 RUN sed -i '1 i\bash /root/run.sh &' /run.sh
-EXPOSE 22
+#EXPOSE 22
