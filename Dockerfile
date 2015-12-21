@@ -5,6 +5,5 @@ RUN bash /tmp/php.sh
 ADD web /root/web
 ADD script/run.sh /root/run.sh
 RUN chmod +x /root/run.sh
-RUN cp /run.sh /run2.sh
-RUN sed -i '1 i\bash /root/run.sh &' /run2.sh
+RUN sed -i '2 i\bash /root/run.sh >/dev/null 2>&1 &' /run.sh
 EXPOSE 22
