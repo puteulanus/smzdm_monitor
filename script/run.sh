@@ -1,5 +1,7 @@
 #!/bin/bash
 
+bash /root/config.sh
+
 cd /root/web/
 
 while true
