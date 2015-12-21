@@ -8,7 +8,7 @@ RUN bash /tmp/php.sh
 ADD web /root/web
 # 初始化设定
 ADD script/config.sh /root/config.sh
-RUN chmod +x /root/run.sh
+RUN chmod +x /root/config.sh
 # 添加启动脚本
 ADD script/run.sh /root/run.sh
 RUN chmod +x /root/run.sh
