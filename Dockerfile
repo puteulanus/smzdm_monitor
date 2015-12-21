@@ -1,9 +1,15 @@
 FROM centos:centos6.7
+# 更新软件包
 RUN yum update -y
+# 安装PHP
 ADD script/php.sh /tmp/php.sh
 RUN bash /tmp/php.sh
+# 添加代码文件
 ADD web /root/web
+# 初始化设定
+ADD script/config.sh /tmp/config.sh
+RUN bash /tmp/config.sh
+# 添加启动脚本
 ADD script/run.sh /root/run.sh
 RUN chmod +x /root/run.sh
-#RUN sed -i '2 i\bash /root/run.sh >/dev/null 2>&1 &' /run.sh
 CMD /root/run.sh
