@@ -4,8 +4,8 @@ if [ -d "/mnt/volume/smzdm_monitor" ]; then
 	ln -s /mnt/volume/smzdm_monitor /root/conf
 fi
 
-if [ -x "/root/conf/base.sh" ]; then
-	source /root/conf/base.sh
+if [ -f "/root/conf/config.php" ]; then
+	cp /root/conf/config.php /root/web/config.php
 fi
 
 if [ -f "/root/conf/main.txt" ]; then
