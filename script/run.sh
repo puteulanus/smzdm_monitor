@@ -6,7 +6,7 @@ cd /root/web/
 
 while true
 do
-	php cron.php
+	php cron.php &
 	date
 	sleep 60
 done
