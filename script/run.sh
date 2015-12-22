@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bash /root/config.sh
+source /root/config.sh
 
 cd /root/web/
 
