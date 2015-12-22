@@ -8,5 +8,5 @@ while true
 do
 	php cron.php
 	date
-	sleep ${_CRON_TIME_}
+	sleep 60
 done
