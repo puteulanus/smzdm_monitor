@@ -5,7 +5,7 @@ if [ -d "/mnt/volume/smzdm_monitor" ]; then
 fi
 
 if [ -f "/root/conf/config.php" ]; then
-	cp /root/conf/config.php /root/web/config.php
+	cp /root/conf/config.php /root/web/config.inc.php
 fi
 
 if [ -f "/root/conf/main.txt" ]; then
